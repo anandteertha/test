@@ -5,8 +5,8 @@ int main()
 	int num,numcpy=0,j=0;
 	cout<<"Enter the number : ";
 	cin>>num;
-	int factor[1000];
-	for(int i=0;i<num;i++)
+	int factor[num];
+	for(int i=1;i<=num-1;i++)
 	{
 		if(num%i==0)
 		{
@@ -14,12 +14,17 @@ int main()
 			j++;
 		}
 	}
-	cout<<endl<<j;
-	for(int i=0;i<=j;i++)
-	numcpy=numcpy+factor[i];
+	for(int o=0;o<j;o++)
+	{
+		numcpy=numcpy+factor[o];
+	}
 	if(numcpy==num)
-	cout<<"\nNumber is perfect number.";
+	{
+		cout<<"\nNumber is perfect number.";
+	}
 	else
-	cout<<"\nNumber is not perfect number.";
+	{
+		cout<<"\nNumber is not perfect number.";
+	}
 	return 0;
 }
