@@ -5,7 +5,7 @@ int main()
 	int num,numcpy=0,j=0;
 	cout<<"Enter the number : ";
 	cin>>num;
-	int factor[num];
+	int factor[num];	//this is an array
 	for(int i=1;i<=num-1;i++)
 	{
 		if(num%i==0)
